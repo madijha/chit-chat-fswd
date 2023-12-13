@@ -1,36 +1,9 @@
-.gitignore => files and folder which you don't want to commit
-
-.env => environment file in which we put some imp variables,credentials and url
-
-
-cors=> cross origin request 
-
-dotenv => to access env file in code
-
-
-mongoose => create model => make custom validation and required properties
-
-
-
 api list 
     for users
         signup
         login
         usersList
 
-
-authentication and authorization
-    authentication => validate the user access (login)
-    authorization => user access to particular thing
-
-
-
-mistakes in our initial signup
-    in response we are sending password => done
-    same user name error => done
-    handle it in a good way => done
-    encrypt the password =>done
-    authorization token =>
 
 
 encrypt password
@@ -76,13 +49,6 @@ req.io.sockets.emit('messages', req.body.message);
  socket.on("messages", (data) => setLastMessage(data));
 
 
-
- chatting app
- 3 model    
-    Global message
-    message
-    Conversation
-
 api list
     post Global message (/global)
     get Global message (/globalMessage)
@@ -94,35 +60,10 @@ api list
 
 
 
-    ravi
-ashvary
-sudhir
-manisha
-krishna
-
-
-
-4 account i will Creates
-and do some conversation
-
-global
-
-personal
-
-
-postman collection 
-
-
-
-
-socket io (live chatting)
 
 send message from react
 
 
-api
-    1.) to learn api
-    2.) to save chatting
 
 socket io
     Live chatting
@@ -132,10 +73,7 @@ socket io
 
     sending message => any1 / global
 
-    user register => live in my conversation
-
-
-    any post req (not all)=> socket.io
+    user register => live in conversation
 
     req.io.sockets.emit("users", user.username); 
     req.io.sockets.emit('messages', req.body.message);
@@ -144,16 +82,3 @@ socket io
     
     const socket = socketIOClient(process.env.REACT_APP_API_URL);
     socket.on("messages", (data) => setLastMessage(data));
-
-
-concurrently 
-        "client-install": "npm install --prefix client",
-        "start": "node server.js",
-        "server": "nodemon server.js",
-        "client": "npm start --prefix client",
-        "dev": "concurrently \"npm run server\" \"npm run client\""
-
-
-
-
-
